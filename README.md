@@ -66,10 +66,10 @@ tha_partner_code_search/
 2. Update the Apps list in Odoo.
 3. Install **Partner Code Search**.
 
-Docker workspace command:
+Example command:
 
 ```bash
-docker exec odoo_19 odoo -c /etc/odoo/odoo.conf -d Day_Sq_test -i tha_partner_code_search --stop-after-init
+docker exec odoo_19 odoo -c /etc/odoo/odoo.conf -d YOUR_DB_NAME -i tha_partner_code_search --stop-after-init
 docker restart odoo_19
 ```
 
@@ -78,9 +78,9 @@ docker restart odoo_19
 Validated in this workspace by:
 
 - Python syntax compilation
-- Module installation in `Day_Sq_test`
+- Module installation
 - Odoo container restart
-- Live `res.partner.name_search()` check confirming business partner code lookup works for existing codes such as `RAD0007`
+- Live `res.partner.name_search()` check confirming business partner code lookup works for existing codes
 
 ## License
 
